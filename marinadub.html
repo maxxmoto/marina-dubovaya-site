@@ -36,7 +36,9 @@
 <meta name="twitter:title" content="Психолог Марина Дубовая — онлайн-консультации">
 <meta name="twitter:description" content="Ценности, приоритеты, вина и конфликт «надо/хочу». Первая сессия — 1 100 ₽.">
 <meta name="twitter:image" content="https://maxxmoto.github.io/marina-dubovaya-site/og-image.jpg">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/onest-symbols.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="marina_1.webp" type="image/webp" fetchpriority="high">
 <script type="application/ld+json">
 {
@@ -180,15 +182,10 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/cyrillic-400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/cyrillic-500.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/cyrillic-600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/cyrillic-700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/cyrillic-800.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/latin-400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/latin-700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/onest@latest/latin-800.css">
 <style>
+@font-face{font-family:'Onest';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/onest-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/onest-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/onest-symbols.woff2') format('woff2');unicode-range:U+20BD,U+2116,U+2190-21FF,U+2200-22FF,U+25A0-25FF}
 :root{
   --bg:#F7F9FC; --navy:#1C2B39; --ink-2:#33424F; --muted:#5B6B7A; --muted-2:#8A97A3;
   --blue:#1E9AE0; --blue-dark:#187FC2; --sky:#55B2E8; --sky-2:#8CCDF2;
@@ -865,6 +862,79 @@ body{overflow-x:clip}
     -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.12) 14px,#000 50px);
     mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.12) 14px,#000 50px);
   }
+}
+/* ---------- mobile text scale and compact footer ---------- */
+@media(max-width:600px){
+  .hero-left p{font-size:16px}
+  .sec-sub{font-size:16px}
+  .sit-body h3{font-size:19px}
+  .sit-body p{font-size:14.5px}
+  .why-card h3{font-size:18px}
+  .why-card p{font-size:14.5px}
+  .m-card h3{font-size:18px}
+  .m-card p{font-size:14.5px}
+  .how-front h3{font-size:24px}
+  .how-back p{font-size:14.5px}
+  .how-back-list li{font-size:14px}
+  .res-when{font-size:13px}
+  .res-list li{font-size:14.5px}
+  .price-desc{font-size:15px}
+  .checks li{font-size:14.5px}
+  .price-per{font-size:14px}
+  .about-text{font-size:15px}
+  .ask-small{font-size:13.5px}
+  .ask-card p{font-size:14.5px}
+  .contact-card h3{font-size:19px}
+  .contact-card .handle{font-size:15px}
+  .faq-q{font-size:15.5px}
+  .faq-a p{font-size:14.5px}
+  .modal-sub{font-size:14px}
+  .modal-terms li{font-size:14px}
+  .chat-alt{font-size:12.5px}
+  .msg{font-size:14px}
+  .footer{padding:30px 0 20px}
+  .footer-grid{gap:22px}
+  .footer .f-brand{font-size:19px}
+  .footer-seo{font-size:13.5px}
+  .footer-col{gap:0}
+  .footer-col:nth-child(2){display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;text-align:center}
+  .footer-col:nth-child(2) .footer-title{grid-column:1/-1;margin-bottom:2px}
+  .footer-col:nth-child(3){flex-direction:row;justify-content:center;flex-wrap:wrap;gap:8px 16px}
+  .footer-col:nth-child(3) .footer-title{width:100%;margin-bottom:2px}
+  .footer a.f-link{font-size:14px}
+  .footer-bottom{margin-top:20px;padding-top:16px}
+  .footer-legal{gap:6px 14px;font-size:13px}
+}
+/* ---------- mobile typography and footer ---------- */
+@media(max-width:900px){
+  .hero-left p{font-size:16px}
+  .sec-sub,.sec-sub-left{font-size:16.5px}
+  .sit-body h3{font-size:19px}
+  .sit-body p{font-size:15px}
+  .why-card h3{font-size:18.5px}
+  .why-card p{font-size:15px}
+  .why-conclude p{font-size:15.5px}
+  .res-list li{font-size:14.5px}
+  .m-card p{font-size:15px}
+  .how-back p{font-size:14.5px}
+  .how-back-list li{font-size:14px}
+  .price-desc{font-size:15px}
+  .checks li{font-size:14.5px}
+  .about-text{font-size:15px}
+  .faq-a p{font-size:14.5px}
+  .contact-card .handle{font-size:15px}
+  .footer-seo{font-size:13.5px}
+  .footer a.f-link{font-size:14px}
+  .footer-legal{font-size:13px}
+}
+@media(max-width:600px){
+  .footer-grid{grid-template-columns:1fr;gap:20px;text-align:center}
+  .footer-about{grid-column:auto;text-align:center}
+  .footer-col{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 16px}
+  .footer-title{flex-basis:100%;margin-bottom:0}
+  .footer-seo{text-align:center;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .footer-bottom{margin-top:22px;padding-top:16px}
+  .footer-legal{justify-content:center;gap:6px 16px}
 }
 </style>
 </head>
