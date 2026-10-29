@@ -325,9 +325,9 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
 .sit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
 .sit-card{border-radius:var(--r-md);overflow:hidden;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--glass-br);box-shadow:0 8px 30px rgba(16,34,51,.06);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
 .sit-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.sit-media{height:250px;position:relative;overflow:hidden;background:#DDE3E6}
+.sit-media{height:auto;aspect-ratio:5/6;position:relative;overflow:hidden;background:#DDE3E6}
 .sit-media canvas{width:100%;height:100%}
-.sit-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.sit-media img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .sit-num{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#EAF4FC,#F3EEFB)}
 .sit-num b{font-size:82px;line-height:1;font-weight:800;letter-spacing:-.04em;color:var(--blue)}
 .sit-num span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
@@ -854,7 +854,7 @@ body{overflow-x:clip}
 
 /* ---------- mobile situations images ---------- */
 @media(max-width:900px){
-  .sit-media{height:auto;aspect-ratio:4/3}
+  .sit-media{height:auto;aspect-ratio:5/6}
   .sit-media img{width:100%;height:100%;object-fit:cover;object-position:center}
 }
 
@@ -1009,27 +1009,27 @@ body{overflow-x:clip}
     <p class="sec-sub sec-sub-left">Не обязательно знать, как называется ваше состояние. Достаточно ощущения: «это про меня, и так больше нельзя».</p>
     <div class="sit-grid">
       <article class="sit-card">
-        <div class="sit-media"><img src="photo1.webp" srcset="photo1-480.webp 480w, photo1.webp 571w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Всё делаю для других — а себя не слышу" width="571" height="428" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo1.webp" srcset="photo1-480.webp 480w, photo1.webp 571w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Всё делаю для других — а себя не слышу" width="571" height="695" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3>Всё делаю для других — а <span class="sit-key">себя</span> не слышу</h3><p>Семья, работа, чужие просьбы занимают всё время. Свои желания — в конце списка, а чаще их просто не слышно.</p></div>
       </article>
       <article class="sit-card">
-        <div class="sit-media"><img src="photo2.webp" srcset="photo2-480.webp 480w, photo2.webp 570w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Не понимаю, чего хочу" width="570" height="427" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo2.webp" srcset="photo2-480.webp 480w, photo2.webp 570w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Не понимаю, чего хочу" width="570" height="680" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3>Не понимаю, чего <span class="sit-key">хочу</span></h3><p>Вопрос «чего ты хочешь?» вызывает ступор: желания потерялись среди бесконечных «надо» и обязанностей.</p></div>
       </article>
       <article class="sit-card">
-        <div class="sit-media"><img src="photo3.webp" srcset="photo3-480.webp 480w, photo3.webp 576w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Чувствую вину, когда делаю для себя" width="576" height="432" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo3.webp" srcset="photo3-480.webp 480w, photo3.webp 576w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Чувствую вину, когда делаю для себя" width="576" height="704" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3>Чувствую <span class="sit-key">вину</span>, когда делаю для себя</h3><p>Страх: «если начну делать для себя — стану плохой». И будто осудят близкие, коллеги, весь мир.</p></div>
       </article>
       <article class="sit-card">
-        <div class="sit-media"><img src="4.webp" srcset="4-480.webp 480w, 4-800.webp 800w, 4.webp 1024w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Живу не свою жизнь" width="1024" height="1024" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo4.webp" srcset="photo4-480.webp 480w, photo4.webp 561w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Живу не свою жизнь" width="561" height="716" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3>Живу <span class="sit-key">не свою</span> жизнь</h3><p>Вроде бы всё нормально, но внутри — ощущение потерянности и чужого сценария, по которому вы живёте.</p></div>
       </article>
       <article class="sit-card">
-        <div class="sit-media"><img src="5.webp" srcset="5-480.webp 480w, 5-800.webp 800w, 5.webp 1024w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Тревога из-за неопределённости" width="1024" height="1024" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo5.webp" srcset="photo5-480.webp 480w, photo5.webp 548w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Тревога из-за неопределённости" width="548" height="707" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3><span class="sit-key">Тревога</span> из-за неопределённости</h3><p>Решения даются тяжело: любой шаг взвешивается по сто раз, а ошибка ощущается как катастрофа.</p></div>
       </article>
       <article class="sit-card">
-        <div class="sit-media"><img src="6.webp" srcset="6-480.webp 480w, 6-800.webp 800w, 6.webp 1024w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Конфликт «надо/хочу» не заканчивается" width="1024" height="1024" loading="lazy" decoding="async"></div>
+        <div class="sit-media"><img src="photo6.webp" srcset="photo6-480.webp 480w, photo6.webp 572w" sizes="(max-width:900px) calc(100vw - 36px), 377px" alt="Конфликт «надо/хочу» не заканчивается" width="572" height="697" loading="lazy" decoding="async"></div>
         <div class="sit-body"><h3>Конфликт <span class="sit-key">«надо/хочу»</span> не заканчивается</h3><p>Внутренняя война выматывает: то заставляете себя, то срываетесь — и снова вините.</p></div>
       </article>
     </div>
