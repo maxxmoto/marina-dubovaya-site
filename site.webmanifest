@@ -1,0 +1,24 @@
+{
+  "name": "Психолог Марина Дубовая",
+  "short_name": "М. Дубовая",
+  "description": "Индивидуальные онлайн-консультации психолога Марины Дубовой.",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F9FC",
+  "theme_color": "#005C7E",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*?text=
+Disallow: /_t_
+
+Sitemap: https://marinadubovaya.ru/sitemap.xml
