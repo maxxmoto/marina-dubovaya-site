@@ -3,4 +3,4 @@ Allow: /
 Disallow: /*?text=
 Disallow: /_t_
 
-Sitemap: https://maxxmoto.github.io/marina-dubovaya-site/sitemap.xml
+Sitemap: https://marinadubovaya.netlify.app/sitemap.xml
